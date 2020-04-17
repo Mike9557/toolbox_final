@@ -1,0 +1,17 @@
+{
+	"query": {
+		"bool": {
+			"must": [{
+					"exists": {
+						"field": "$Field"
+					}
+				},
+				{
+					"term": {
+						"TrialId": "$TrialId"
+					}
+				}
+			]
+		}
+	}
+}

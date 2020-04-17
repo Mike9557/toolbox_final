@@ -1,0 +1,18 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "$Field_1": "$Value_1"
+          }
+        },
+        {
+          "term": {
+            "$Field_2": "$Value_2"
+          }
+        }
+      ]
+    }
+  }
+}
